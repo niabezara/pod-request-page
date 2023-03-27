@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #121725;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 2.5), rgba(0, 0, 0, 0.7)),
+    url(./mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+  mix-blend-mode: screen;
+  /* filter: brightness(0.2); */
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 6.2em 0 5.7em;
+}
+
+/* ****************************************************** */
+/* main section */
+/* ******************************************************* */
+
+main {
+  width: 32.7rem;
+
+  margin: 0 auto 9.4rem auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #54e6af;
+}
+
+span {
+  color: #ffffff;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #c2cbe5;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.6rem;
+  gap: 2.3rem;
+}
+
+/* **************************************** */
+/* icons */
+/* ****************************************** */
+
+.spotify {
+  background-image: url(./desktop/spotify.svg);
+  background-repeat: no-repeat;
+  width: 5.6rem;
+  height: 1.7rem;
+  background-size: contain;
+}
+
+.apple {
+  background-image: url(./desktop/apple-podcast.svg);
+  background-repeat: no-repeat;
+  width: 5.6rem;
+  height: 1.7rem;
+  background-size: contain;
+}
+.google {
+  background-image: url(./desktop/google-podcasts.svg);
+  background-repeat: no-repeat;
+  width: 7.3rem;
+  height: 1.1rem;
+  background-size: contain;
+}
+.pocket {
+  background-image: url(./desktop/pocket-casts.svg);
+  background-repeat: no-repeat;
+  width: 7.7rem;
+  height: 1.5rem;
+  background-size: contain;
+}
+/* ****************************************** */
+/* input section */
+/* *********************************************** */
+
+.input-values {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-top: 5.2rem;
+}
+
+.input {
+  background: #2c344b;
+  border-radius: 2.8rem;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding: 0.9em 0 0.9em 3.2em;
+  border: none;
+}
+
+.request {
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+  border: none;
+  padding: 0.9em 0 0.9em;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 700;
+  padding: 0.9em 11rem 0.9em 7.2em;
+}
+
+.request:hover {
+  cursor: pointer;
+  background: #b3ffe2;
+  transition: 0.5s;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 1.8rem;
+  color: #fb3e3e;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* ********************************************************** */
+/* Tablet version  */
+/* ************************************************************ */
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url(./tablet/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    filter: brightness(0.75);
+  }
+  .spots {
+    background-image: url(./desktop/bg-pattern-dots.svg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    margin-top: 11rem;
+    margin-left: 4rem;
+    height: 11.7rem;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5em 0 0 3.9em;
+  }
+  main {
+    background-color: #000000;
+    position: relative;
+    margin: 15.8rem 9.4rem auto 3.9rem;
+    width: 63.5rem;
+    height: 50.9rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .navigation {
+    grid-area: 3;
+    justify-content: flex-start;
+    gap: 4.1rem;
+    margin-left: 2rem;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 9.3rem;
+  }
+  .description {
+    font-size: 18px;
+    text-align: left;
+    width: 44.5rem;
+    line-height: 28px;
+  }
+  /* ******************************************** */
+  /* request button */
+  /* ******************************************* */
+  .request {
+    position: absolute;
+    right: 18.1rem;
+    padding: 0.9em 2.7rem 0.9em 2.7em;
+  }
+  input {
+    width: 44.7rem;
+    position: relative;
+  }
+
+  /* **************************************** */
+  /* icons */
+  /* *********************************** */
+  .spotify {
+    width: 9.5rem;
+    height: 2.9rem;
+  }
+
+  .apple {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+  .google {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+  .pocket {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+}
+
+/* ******************************************* */
+/* desktop version */
+/* ************************************************ */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 12.2rem 0 7.8rem 16.5rem;
+  }
+  header {
+    padding: 0em 0 0 3.9em;
+  }
+  .container {
+    background-image: url(./desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: top 7rem right;
+    filter: brightness(0.75);
+  }
+  .spots {
+    background-position: right;
+    margin-top: -7rem;
+  }
+  main {
+    margin: 2.8rem 9.4rem auto 3.9rem;
+    width: 72.3rem;
+    height: 50.9rem;
+  }
+}
